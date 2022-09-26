@@ -1,0 +1,37 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        font-family: $logo-font;
+        font-weight: $fontw-xbold;
+        font-size: rem(24px);
+        line-height: rem(35px);
+    }
+    
+    .navBar-mobile {
+        width: rem(24px);
+        height: $nav-icon-height;
+        cursor: pointer;
+
+        .navBar-mobile-line-1,
+        .navBar-mobile-line-2,
+        .navBar-mobile-line-3 {
+            height: $nav-icon-line-height;
+            width: 100%;
+            background-color: #000;
+            border-radius: rem(3px);
+            box-shadow: 0 rem(2px) rem(10px) 0 rgba(0,0,0,0.3);
+        }
+
+        .navBar-mobile-line-2 {
+            margin: $nav-icon-line-space 0;
+        }
+    }
+
+    .navBar-desktop {
+        display: none
+    }
+}

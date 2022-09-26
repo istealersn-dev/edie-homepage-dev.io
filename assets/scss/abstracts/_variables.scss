@@ -1,0 +1,36 @@
+// breakpoints
+    $sm: rem(375);
+    $sm-landscape: rem(576);
+    $md: rem(768);
+    $lg: rem(992);
+    $xl: rem(1200);
+    $xxl: rem(1440);
+
+// font-family declarations
+    $logo-font: 'Heebo', sans-serif;
+    $primary-font: 'Poppins', sans-serif;
+
+// font attributes declarations
+    // font Weight
+    $fontw-regular: 400;
+    $fontw-medium: 500;
+    $fontw-sbold: 600;
+    $fontw-bold: 700;
+    $fontw-xbold: 800;
+
+    // font Size
+    $fsize: 1rem;
+
+// standard margin
+    $margin: 1rem;
+
+// standard padding
+    $padding: 1rem;
+
+// Color
+
+// Burger Nav Icon
+$nav-icon-line-height: 4px; 
+$nav-icon-line-space: 4px;
+$nav-icon-line-offsetY: $nav-icon-line-height + $nav-icon-line-space;
+$nav-icon-height: (3 * $nav-icon-line-height) + (3 * $nav-icon-line-space);

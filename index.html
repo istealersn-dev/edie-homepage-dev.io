@@ -8,7 +8,10 @@
   maximum-scale=5"
     />
 
-    <link rel="icon" href="devchallenges.png" />
+    <link 
+      rel="icon" 
+      href="./assets/images/devchallenges.png" 
+    />
 
     <link
       rel="shortcut icon"
@@ -17,79 +20,55 @@
     />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      href="./dist/css/main.min.css"
       rel="stylesheet"
     />
 
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <title>We create beautiful & fast websites | Edie</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <header>
+      <div class="navBar">
+        <span class="logo">Edie</span>
+        <nav>
+          <div class="navBar-mobile">
+            <div class="navBar-mobile-line-1"></div>
+            <div class="navBar-mobile-line-2"></div>
+            <div class="navBar-mobile-line-3"></div> 
+          </div>
+          <div class="navBar-desktop">
+            <ul class="navBar-desktop-list">
+              <li class="navBar-desktop-list-items">Home</li>
+              <li class="navBar-desktop-list-items">Services</li>
+              <li class="navBar-desktop-list-items">Our Works</li>
+              <li class="navBar-desktop-list-items">Clients</li>
+              <li class="navBar-desktop-list-items">Contact</li>
+            </ul>
+          </div>
+        </nav>
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+    </header>
+    <main>
+      <section class="hero">
+         <div class="hero-header">
+            <span class="eyebrow">Unhappy with your website?</span>
+            <h1>We create beautiful and fast web services</h1>
+         </div>
+         <img src="./assets/images/heroImage.jpg" alt="Team of 4 people discussing ideas" class="hero-image" />
+         <div class="hero-header">
+          <h2>Story, emotion and purpose</h2>
+          <p>We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+          <div class="hero-header-form">
+            <form>
+              <label for="email">Want us to contact you?</label>
+              <div class="hero-header-form-input">
+                <input type="email" name="email" id="email" placeholder="Email" />
+                <button>Join</button>
+              </div>
+            </form>
+          </div>
+         </div>
+      </section>
+    </main>
   </body>
 </html>
