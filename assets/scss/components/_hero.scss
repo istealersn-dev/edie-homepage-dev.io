@@ -1,0 +1,75 @@
+.hero {
+    padding-top: rem(35px);
+
+    &-header {
+        padding-left: 10%;
+        font-weight: $fontw-medium;
+        max-width: 87%;
+
+        .eyebrow {
+            color: $light-blue-pm;
+        }
+
+        > h1 {
+            padding-bottom: rem(15px);
+        }
+
+        > h2 {
+            padding-top: rem(20px);
+            max-width: 85%;
+        }
+
+        > p {
+            padding-top: rem(30px);
+            padding-bottom: rem(30px);
+            font-weight: $fontw-regular;
+            font-size: rem(12px);
+            line-height: rem(18px);
+        }
+
+        &-form {
+            font-weight: $fontw-medium;
+
+            label {
+                font-size: rem(10px);
+                line-height: rem(15px);
+            }
+
+            &-input {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+                border-radius: rem(12px);
+                background-color: $light-gray-300;
+
+                input {
+                    background-color: $light-gray-300;
+                    border-radius: rem(12px);
+                    border: none;
+                    padding: rem(15px) rem(20px);
+                    font-size: rem(14px);
+                    line-height: rem(21px);
+                    width: rem(300px);
+                }
+
+                button {
+                    position: absolute;
+                    right: 0;
+                    border: none;
+                    border-radius: rem(12px);
+                    background-color: $light-blue-pm;
+                    color: $light-gray-300;
+                    font-size: rem(14px);
+                    line-height: rem(21px);
+                    padding: rem(12px) rem(20px);
+                }
+            }
+        }
+    }
+
+    &-image {
+        border-radius: rem(18px);
+        aspect-ratio: 21 / 9; 
+    }
+}

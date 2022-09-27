@@ -9,6 +9,7 @@
         font-weight: $fontw-xbold;
         font-size: rem(24px);
         line-height: rem(35px);
+        color: $dark-gray;
     }
     
     .navBar-mobile {
@@ -23,7 +24,6 @@
             width: 100%;
             background-color: #000;
             border-radius: rem(3px);
-            box-shadow: 0 rem(2px) rem(10px) 0 rgba(0,0,0,0.3);
         }
 
         .navBar-mobile-line-2 {

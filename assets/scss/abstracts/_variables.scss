@@ -27,7 +27,24 @@
 // standard padding
     $padding: 1rem;
 
-// Color
+// Color Palette
+    $dark-gray: #333333; // logo & heading
+    $light-gray: #4F4F4F; // paragraph
+
+    $light-gray-300: #F2F2F2; // input & footer text
+
+    $light-gray-500: #828282; // form & label
+    $light-gray-700: #BDBDBD; // form placeholder
+    
+    $light-blue-pm: #2D9CDB; // primary button & eyebrow
+    $light-gray-sc: #E0E0E0; // secondary button
+    $light-gray-tr: #828282; // secondary eyebrow
+
+    $bckg-purple: #100E1D; // background color
+
+    $green-300: #27AE60; // Icon
+    $red-300: #EB5757; // Tag
+
 
 // Burger Nav Icon
 $nav-icon-line-height: 4px; 

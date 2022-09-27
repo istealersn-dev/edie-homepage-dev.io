@@ -13,4 +13,12 @@
 
 // 3. Components
 @import
-'components/header';
+'components/atoms',
+'components/cards',
+'components/header',
+'components/hero';
+
+
+// 4. Layouts
+@import
+'layout/container';
