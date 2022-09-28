@@ -1,0 +1,56 @@
+.teamboard {
+    margin-top: rem(100px) !important;
+    margin-bottom: rem(100px) !important;
+
+    .teamboard-header {
+        max-width: 80%;
+
+        .eyebrow {
+            font-size: rem(18px);
+            line-height: rem(27px);
+            color: $red-300;
+            font-weight: $fontw-medium;
+        }
+
+        > h2 {
+            font-size: rem(36px);
+            line-height: rem(54px);
+        }
+
+        > p {
+            font-weight: $fontw-regular;
+            font-size: 1rem;
+            line-height: rem(24px);
+            color: $light-gray;
+            margin-top: rem(15px);
+            margin-bottom: rem(35px);
+        }
+    }
+
+    .teamboard-pics {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3%;
+
+        > img {
+            border-radius: rem(24px);
+            aspect-ratio: 1 / 1;
+
+            &:nth-child(1) {
+                grid-row: 1 / span 2;
+                justify-self: left;
+                align-self: center;
+            }
+
+            &:nth-child(2) {
+                width: 85%;
+                justify-self: left;
+            }
+
+            &:nth-child(3) {
+                width: 95%;
+                justify-self: left;
+            }
+        }
+    }
+}

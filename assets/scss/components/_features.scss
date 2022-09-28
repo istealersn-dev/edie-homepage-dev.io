@@ -1,0 +1,17 @@
+.features {
+    display: grid;
+    
+    > h2 {
+        padding-left: 10%;
+        max-width: 85%;
+        margin-bottom: rem(45px);
+    }
+
+    a {
+        color: $light-blue-pm;
+        background-color: transparent;
+        font-size: rem(18px);
+        line-height: rem(27px);
+        padding: 0;
+    }
+}

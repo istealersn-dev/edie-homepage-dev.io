@@ -82,3 +82,21 @@ a:hover {
         }
     }
 }
+
+// Individual feature card styles
+.features-card {
+    margin-bottom: rem(35px);
+    > img {
+        border-radius: rem(12px);
+    }
+
+    .eyebrow {
+        font-weight: $fontw-light;
+        color: $light-gray-500;
+    }
+
+    h3 {
+        font-size: rem(18px) !important;
+        line-height: rem(27px) !important;
+    }
+}
