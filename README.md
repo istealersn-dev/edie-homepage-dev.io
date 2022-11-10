@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://edie-homepage-dev-io.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/istealersn-dev/edie-homepage-dev.io">
       Solution
     </a>
     <span> | </span>
@@ -37,22 +37,18 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](blob:https://vercel.com/704ac3bd-1d76-4716-8d5b-5d2a88c4a6f3)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+This was an interesting project when I began the development. Another attempt to successfully develop responsive landing page with just HTML and SCSS alone.
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- You can use the following link to review the page: https://edie-homepage-dev-io.vercel.app/
+- Amazing experience especially full bleed image vs the rest of the items on the page
+- Learned a bit more SaSS (mixins, functions, map, etc.)
+- Love doing such projects
 
 ### Built With
 
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+This page has been purely built using HTML5 and SaSS. I have also implemented 7-in-1 Sass architecture as part of this project
 
 ## Features
 
@@ -68,7 +64,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/istealersn-dev/edie-homepage-dev.io
 
 # Install dependencies
 $ npm install
@@ -87,6 +83,4 @@ $ npm start
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@your-username](https://github.com/istealersn-dev)
