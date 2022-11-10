@@ -28,13 +28,22 @@
   </head>
   <body>
     <header>
-      <div class="container navBar">
+      <div class="navBar">
         <span class="logo">Edie</span>
         <nav>
-          <div class="navBar-mobile">
-            <div class="navBar-mobile-line-1"></div>
-            <div class="navBar-mobile-line-2"></div>
-            <div class="navBar-mobile-line-3"></div> 
+          <div class="navBar-mobile" role="burger nav">
+            <div class="navBar-mobile-line-1" aria-disabled="true"></div>
+            <div class="navBar-mobile-line-2" aria-disabled="true"></div>
+            <div class="navBar-mobile-line-3" aria-disabled="true"></div>
+            <div class="navBar-mobile-overlay">
+            <ul>
+              <li>Home</li>
+              <li>Services</li>
+              <li>Our Works</li>
+              <li>Clients</li>
+              <li>Contact</li>
+            </ul>  
+          </div>
           </div>
           <div class="navBar-desktop">
             <ul class="navBar-desktop-list">
@@ -49,19 +58,19 @@
       </div>
     </header>
     <main>
-      <section class="container hero">
+      <section class="hero">
          <div class="hero-header">
             <span class="eyebrow">Unhappy with your website?</span>
-            <h1>We create beautiful and fast web services</h1>
+            <h1>We create beautiful <br>and fast web services</h1>
          </div>
          <img src="./assets/images/heroImage.jpg" alt="Team of 4 people discussing ideas" class="hero-image" />
          <div class="hero-header">
-          <h2>Story, emotion and purpose</h2>
+          <h2>Story, emotion <br>and purpose</h2>
           <p>We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
-          <div class="hero-header-form">
+          <div class="form">
             <form>
               <label for="email">Want us to contact you?</label>
-              <div class="hero-header-form-input">
+              <div class="form-input">
                 <input type="email" name="email" id="email" placeholder="Email" />
                 <button>Join</button>
               </div>
@@ -70,7 +79,7 @@
          </div>
       </section>
       <section class="container cards">
-        <h2>We offer high demand services</h2>
+        <h2>We offer high <br>demand services</h2>
         <div class="cards-list">
           <div class="card">
             <div class="card-icon bg-blue"></div>
@@ -93,7 +102,8 @@
         </div>
       </section>
       <section class="container features">
-        <h2>Good design means good business</h2>
+        <h2>Good design means <br>good business</h2>
+        <div class="feature-cards">
         <div class="features-card">
             <img src="./assets/images/smarthome.jpg" alt="preview of Smart home application dashboard" title="Smart home dashboard">
             <span class="eyebrow">Full stack application</span>
@@ -114,7 +124,10 @@
             <span class="eyebrow">Front End application</span>
             <h3>Juice product homepage</h3>
         </div>
+      </div>
+      <div class="features-link">
         <a href="#">see more</a>
+    </div>  
       </section>
       <section class="container teamboard">
           <div class="teamboard-header">
@@ -128,6 +141,56 @@
           <img src="./assets/images/person2.png" alt="Guy wearing specs with a smile">
           </div>
       </section>
+      <section class="container testimonial">
+        <blockquote>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-author-pic">
+            <img src="./assets/images/person4.png" alt="profile pic of Carlos Tran" />
+          </div>
+          <div class="testimonial-author-info">
+            <span class="testimonial-author-name">Carlos Tran</span>
+            <span class="testimonial-author-role">The Decorate Gatsby</span>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer-items">
+      <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Our Works</li>
+        <li>Clients</li>
+        <li>Contact</li>
+      </ul>
+      <div class="foo-logos">
+      <span class="logo">Edie</span>
+      <div class="social-bar">
+        <div class="social-bar-icon">
+        <img src="./assets/social-icons/instagram.svg" alt="Instagram icon">
+      </div>
+      <div class="social-bar-icon">
+        <img src="./assets/social-icons/linkedin.svg" alt="linkedin icon">
+      </div>
+        <div class="social-bar-icon">
+        <img src="./assets/social-icons/twitter.svg" alt="twitter icon">
+      </div>
+      </div>
+    </div>
+    <div class="form">
+      <form>
+        <label for="email">Want us to contact you?</label>
+        <div class="form-input">
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <button>Join</button>
+        </div>
+      </form>
+    </div>
+  </div>
+    <div class="userCred">
+      created by <span>{istealersn-dev}</span> - devChallenges.io
+    </div>
+    </footer>
   </body>
 </html>

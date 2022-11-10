@@ -1,17 +1,41 @@
 .features {
-    display: grid;
-    
+    margin-top: rem(150px) !important;
+
     > h2 {
-        padding-left: 10%;
         max-width: 85%;
         margin-bottom: rem(45px);
     }
 
-    a {
+    .feature-cards {
+        display: grid;
+
+        @include respond-to('large') {
+            grid-template-columns: repeat(2, 1fr);
+            gap: rem(20px);
+        }
+
+        .features-card {
+
+            &:first-child, &:nth-child(3) {
+                padding-top: rem(100px);
+            }
+        }
+    }
+
+    &-link {         
+        width: 100%;
+
+        @include respond-to('large') {
+            text-align: right;
+            margin-top: rem(-50px);
+        }
+        
+        &> a {
         color: $light-blue-pm;
         background-color: transparent;
         font-size: rem(18px);
         line-height: rem(27px);
         padding: 0;
     }
+}
 }

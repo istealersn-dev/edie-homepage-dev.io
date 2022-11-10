@@ -3,35 +3,101 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    .logo {
-        font-family: $logo-font;
-        font-weight: $fontw-xbold;
-        font-size: rem(24px);
-        line-height: rem(35px);
-        color: $dark-gray;
-    }
+    padding: rem(13px) 0 0 rem(10px);
+    width: 95vw;
+    max-width: rem(1400px);
+    margin: auto;
     
     .navBar-mobile {
+        display: block;
         width: rem(24px);
         height: $nav-icon-height;
         cursor: pointer;
 
-        .navBar-mobile-line-1,
-        .navBar-mobile-line-2,
-        .navBar-mobile-line-3 {
+        &-line-1,
+        &-line-2,
+        &-line-3 {
             height: $nav-icon-line-height;
             width: 100%;
             background-color: #000;
             border-radius: rem(3px);
         }
 
-        .navBar-mobile-line-2 {
+        &-line-2 {
             margin: $nav-icon-line-space 0;
+        }
+
+        &-overlay {
+            position: absolute;
+            background-color: $bckg-purple;
+            top: 0%;
+            left: 0%;
+            display: none;
+            width: 100vw;
+            height: 50vh;
+            color: #fff;
+            font-size: rem(24px);
+            line-height: rem(24px);
+            font-weight: $fontw-regular;
+            text-align: center;
+            transition: ease-out 500ms;
+
+            ul, li {
+                padding: rem(24px);
+            }
+        }
+
+        @include respond-to('large') {
+            display: none;
+        }
+    }
+
+    .navBar-mobile:hover .navBar-mobile-overlay {
+        display: block;
+        
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
         }
     }
 
     .navBar-desktop {
-        display: none
+        display: none;
+
+        @include respond-to('large') {
+            display: block;
+            font-size: rem(16px);
+            font-weight: $fontw-medium;
+            line-height: rem(24px);
+
+            &-list {
+                display: flex;
+
+                &-items {
+                    margin-right: rem(40px);
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                &-items:hover {
+                    cursor: pointer;
+                    padding-left: rem(10px);
+                    padding-right: rem(10px);
+                    background-color: $light-gray-300;
+                    transform: translateY(-5px);
+                    transition: ease-in-out 300ms;
+                }
+            }            
+        }
+
+        @include respond-to('2xlarge') {
+            font-size: rem(24px);
+            font-weight: $fontw-medium;
+            line-height: rem(36px);            
+        }
     }
+
+
 }

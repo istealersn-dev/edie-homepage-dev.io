@@ -1,10 +1,18 @@
 .hero {
     padding-top: rem(35px);
+    width: 95vw;
+    margin: auto;
+    max-width: rem(1400px);
 
     &-header {
         padding-left: 10%;
+        padding-right: 10%;
         font-weight: $fontw-medium;
-        max-width: 87%;
+
+        @include respond-to('medium') {
+            padding-left: 15%;
+            padding-right: 42%;
+        }
 
         .eyebrow {
             color: $light-blue-pm;
@@ -16,7 +24,6 @@
 
         > h2 {
             padding-top: rem(20px);
-            max-width: 85%;
         }
 
         > p {
@@ -25,51 +32,13 @@
             font-weight: $fontw-regular;
             font-size: rem(12px);
             line-height: rem(18px);
+            max-width: rem(365px);
         }
 
-        &-form {
-            font-weight: $fontw-medium;
-
-            label {
-                font-size: rem(10px);
-                line-height: rem(15px);
-            }
-
-            &-input {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                position: relative;
-                border-radius: rem(12px);
-                background-color: $light-gray-300;
-
-                input {
-                    background-color: $light-gray-300;
-                    border-radius: rem(12px);
-                    border: none;
-                    padding: rem(15px) rem(20px);
-                    font-size: rem(14px);
-                    line-height: rem(21px);
-                    width: rem(300px);
-                }
-
-                button {
-                    position: absolute;
-                    right: 0;
-                    border: none;
-                    border-radius: rem(12px);
-                    background-color: $light-blue-pm;
-                    color: $light-gray-300;
-                    font-size: rem(14px);
-                    line-height: rem(21px);
-                    padding: rem(12px) rem(20px);
-                }
-            }
-        }
     }
 
     &-image {
         border-radius: rem(18px);
-        aspect-ratio: 21 / 9; 
+        aspect-ratio: 21 / 9;
     }
 }

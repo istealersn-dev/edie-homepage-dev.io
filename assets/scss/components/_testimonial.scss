@@ -1,0 +1,62 @@
+.testimonial {
+    font-weight: $fontw-medium;
+    color: $dark-gray;
+
+    blockquote {
+        font-size: rem(24px);
+        line-height: rem(36px);
+
+        @include respond-to('large') {
+            max-width: 70%;
+        }
+
+        @include respond-to('2xlarge') {
+            max-width: 60%;
+        }
+    }
+
+    &-author {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: rem(30px);
+        margin-top: rem(25px);
+        margin-bottom: rem(100px);
+
+        @include respond-to('large') {
+            margin-top: rem(36px);
+        }
+
+        &-pic {
+            width: rem(82px);
+            height: rem(82px);
+            border-radius: rem(12px);
+            contain: content;
+
+            & > img {
+                aspect-ratio: 1 / 1;
+                width: 100%;
+            }
+        }
+
+        &-info {
+            font-weight: $fontw-medium;
+            
+            & > span {
+                display: block;
+            }
+        }
+
+        &-name {
+            font-size: rem(24px);
+            line-height: rem(36px);
+            margin-bottom: rem(10px);
+        }
+
+        &-role {
+            font-size: rem(18px);
+            line-height: rem(27px);
+            color: $light-gray-500;
+        }
+    }
+}

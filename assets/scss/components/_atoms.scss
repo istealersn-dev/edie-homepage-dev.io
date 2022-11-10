@@ -48,6 +48,71 @@ a:hover {
     background-color: $red-300;
 }
 
+// Logo
+.logo {
+    font-family: $logo-font;
+    font-weight: $fontw-xbold;
+    font-size: rem(24px);
+    line-height: rem(35px);
+    color: $dark-gray;
+
+    @include respond-to('large') {
+        font-size: rem(30px);
+        font-weight: $fontw-sbold;
+        line-height: rem(45px);
+    }
+
+    @include respond-to('2xlarge') {
+        font-size: rem(36px);
+        font-weight: $fontw-xbold;
+        line-height: rem(53px);
+    }
+}
+
+// Form styling
+.form {
+    font-weight: $fontw-medium;
+    max-width: rem(350px);
+
+    label {
+        font-size: rem(10px);
+        line-height: rem(15px);
+        color: $light-gray-tr;
+    }
+
+    &-input {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        border-radius: rem(12px);
+        background-color: $light-gray-300;
+
+        input {
+            background-color: $light-gray-300;
+            border-radius: rem(12px);
+            border: none;
+            padding: rem(15px) rem(20px);
+            font-size: rem(14px);
+            line-height: rem(21px);
+            width: rem(300px);
+        }
+
+        button {
+            position: absolute;
+            right: rem(4px);
+            border: none;
+            border-radius: rem(12px);
+            background-color: $light-blue-pm;
+            color: $light-gray-300;
+            font-size: rem(14px);
+            line-height: rem(21px);
+            padding: rem(12px) rem(20px);
+        }
+    }
+}
+
+
 // Individual card styles
 .card {
     padding: rem(45px) rem(35px);
@@ -98,5 +163,17 @@ a:hover {
     h3 {
         font-size: rem(18px) !important;
         line-height: rem(27px) !important;
+    }
+}
+
+.userCred {
+    font-size: rem(11px);
+    line-height: rem(13px);
+    color: $light-gray-300;
+    padding-bottom: rem(24px);
+
+    span {
+        display: inline-block;
+        font-size: rem(12px);
     }
 }

@@ -1,0 +1,70 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $bckg-purple;
+    padding-top: rem(35px);
+    padding-left: rem(40px);
+
+    .footer-items {
+        width: 95vw;
+        max-width: rem(1400px);
+        margin: auto;
+
+
+        @include respond-to('large') {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            margin-bottom: rem(64px);
+        
+            li {
+                color: #fff;
+                font-size: rem(18px);
+                line-height: rem(36px);
+                font-weight: $fontw-regular;
+            }
+    }
+
+    .foo-logos {
+        .logo {
+            font-size: rem(36px);
+            line-height: rem(52px);
+            color: $light-gray-300;
+        }
+}
+}
+
+    .social-bar {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        gap: rem(10px);
+        max-width: 80%;
+        margin-top: rem(10px);
+        margin-bottom: rem(65px);
+
+        &-icon {
+            width: rem(24px);
+            height: rem(24px);
+
+            img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1 / 1;
+            }
+        }
+    }
+
+    .form {
+        max-width: 87%;
+        padding-bottom: rem(100px);
+    }
+
+    .userCred {
+        text-align: center;
+    }
+}

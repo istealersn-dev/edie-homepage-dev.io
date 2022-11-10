@@ -1,4 +1,16 @@
 .container {
-    margin: rem(13px) 0 0 rem(10px);
-    width: calc(100vw - rem(10px) - rem(17px));
+    margin: auto;
+    width: 95%;
+
+    @include respond-to('medium') {
+        max-width: rem(700px);
+    }
+
+    @include respond-to('large') {
+        max-width: rem(900px);
+    }
+
+    @include respond-to('2xlarge') {
+        max-width: rem(1100px);
+    }
 }

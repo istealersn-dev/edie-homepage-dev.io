@@ -2,8 +2,18 @@
     margin-top: rem(100px) !important;
     margin-bottom: rem(100px) !important;
 
-    .teamboard-header {
-        max-width: 80%;
+    @include respond-to('large') {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: rem(50px);
+    }
+
+    &-header {
+
+        @include respond-to('large') {
+            max-width: rem(300px);
+        }
 
         .eyebrow {
             font-size: rem(18px);
