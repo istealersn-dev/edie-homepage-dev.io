@@ -37,7 +37,7 @@
 
 ## Overview
 
-blob:https://vercel.com/704ac3bd-1d76-4716-8d5b-5d2a88c4a6f3
+(blob:https://vercel.com/704ac3bd-1d76-4716-8d5b-5d2a88c4a6f3)
 
 This was an interesting project when I began the development. Another attempt to successfully develop responsive landing page with just HTML and SCSS alone.
 
